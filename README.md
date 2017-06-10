@@ -6,7 +6,7 @@ GatewayWorker框架文档：http://www.workerman.net/gatewaydoc/
 
  特性
 ======
- * 使用websocket协议
+ * 使用socket协议
  * 多浏览器支持（浏览器支持html5或者flash任意一种即可）
  * 多房间支持
  * 私聊支持
@@ -16,7 +16,7 @@ GatewayWorker框架文档：http://www.workerman.net/gatewaydoc/
   
 下载安装
 =====
-1、git clone https://github.com/walkor/workerman-chat
+1、git clone https://github.com/azazil/workerman-chat
 
 2、composer install
 
