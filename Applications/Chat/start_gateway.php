@@ -16,7 +16,7 @@ use \GatewayWorker\Gateway;
 use \Workerman\Autoloader;
 
 // gateway 进程
-$gateway = new Gateway("socket://0.0.0.0:7373");
+$gateway = new Gateway("tcp://0.0.0.0:7373");
 // 设置名称，方便status时查看
 $gateway->name = 'ChatGateway';
 // 设置进程数，gateway进程数建议与cpu核数相同
