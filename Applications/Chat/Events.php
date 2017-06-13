@@ -81,6 +81,7 @@ class Events
                 // 给当前用户发送用户列表 
                 $new_message['client_list'] = $clients_list;
                 Gateway::sendToCurrentClient(json_encode($new_message));
+                echo(json_encode($new_message));
                 return;
                 
             // 客户端发言 message: {type:say, to_client_id:xx, content:xx}
@@ -117,6 +118,7 @@ class Events
                     'content'=>nl2br(htmlspecialchars($message_data['content'])),
                     'time'=>date('Y-m-d H:i:s'),
                 );
+                 echo(json_encode($new_message));
                 return Gateway::sendToGroup($room_id ,json_encode($new_message));
         }
    }
